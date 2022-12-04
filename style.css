@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Noto+Sans:ital,wght@1,200&family=Poppins:wght@200;300;500;600&family=Roboto+Mono&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  overflow: visible;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d8ffe0;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.main-header {
+  height: 15vh;
+}
+
+.logo {
+  position: absolute;
+  left: 30px;
+}
+
+.logo-img {
+  width: 70px;
+  height: 70px;
+}
+
+.site-name {
+  position: relative;
+  right: 25px;
+  font-size: 20px;
+}
+
+main {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search-div {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100rem;
+  margin: auto;
+}
+
+.size-dropdown {
+  border: 2px solid;
+  border-radius: 2rem;
+  text-align: center;
+  font-size: 20px;
+}
+
+.search-name {
+  font-size: 20px;
+  width: 290px;
+  height: 30px;
+  padding: 0 1rem;
+  outline: 0;
+  border: 2px solid;
+  border-radius: 2rem;
+}
+
+.search-size-btn {
+  border: none;
+  width: 9em;
+  height: 8em;
+  line-height: 1em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background: #85f89a;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-size: 300%;
+  z-index: 1;
+  border-radius: 30px;
+  width: 100px;
+  height: 35px;
+  font-size: 14px;
+  margin: auto;
+}
+.search-size-btn:hover {
+  background-color: #3df55f;
+  transition: 0.5s;
+}
+
+.search-name-btn {
+  border: none;
+  width: 9em;
+  height: 8em;
+  line-height: 1em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background: #85f89a;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-size: 300%;
+  z-index: 1;
+  border-radius: 30px;
+  width: 100px;
+  height: 35px;
+  font-size: 14px;
+  margin: auto;
+}
+.search-name-btn:hover {
+  background-color: limegreen;
+  transition: 0.5s;
+}
+
+.error-message {
+  margin: auto;
+}
+
+.dog-list {
+  display: flex;
+  gap: 50px;
+  margin-left: 50px;
+  flex-wrap: wrap;
+}
+
+.dog-info {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  background-color: #85f89a;
+  color: black;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+  padding: 10px;
+}
+
+.dog-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.dog-name {
+  text-align: center;
+  font-size: 19.5px;
+}
+
+.dog-name:hover {
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.hide_overflowY {
+  overflow-y: hidden;
+}
+
+.close-modal {
+  position: fixed;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  border: 8px solid #85f89a;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 70%;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 103.25%;
+  height: 110%;
+  overflow: auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.dog-header {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 12px;
+}
+
+.dog-img-modal {
+  height: auto;
+  width: 400px;
+}
+
+.dog-info-modal {
+  display: flex;
+  gap: 7px;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.show-images {
+  border: none;
+  width: 9em;
+  height: 8em;
+  line-height: 1em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background: #85f89a;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-size: 300%;
+  z-index: 1;
+  border-radius: 30px;
+  width: 200px;
+  height: 55px;
+  font-size: 20px;
+  margin: auto;
+}
+
+.show-images:hover {
+  background-color: #3df55f;
+  transition: 0.5s;
+}
+
+.all-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.all-images img {
+  height: auto;
+  width: 300px;
+  object-fit: contain;
+}
