@@ -125,6 +125,11 @@ dogList.addEventListener("click", function (e) {
           html2 += `
             <p> <strong>Temperament:</strong> ${dog.temperament}</p>
               `;
+        }        
+        if (dog.weight.metric !== "" && dog.weight.metric !== undefined) {
+          html2 += `
+            <p> <strong>Weight:</strong> ${dog.weight.metric} kg</p>
+              `;
         }
         if (dog.breed_group !== "" && dog.breed_group !== undefined) {
           html2 += `
