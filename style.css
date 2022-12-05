@@ -115,7 +115,7 @@ main {
   margin: auto;
 }
 .search-name-btn:hover {
-  background-color: limegreen;
+  background-color: #3df55f;
   transition: 0.5s;
 }
 
