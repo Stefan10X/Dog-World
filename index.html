@@ -5,57 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./style.css" rel="stylesheet" />
-    <title>Site cu caini</title>
+    <title>Dogs World</title>
   </head>
-<body>
-  <header class = 'main-header'>
-    <div class = 'logo'>
-    <img src="logo.png" alt="" class="logo-img">
-    <h2 class="site-name">Dogs World</h2>
-  </div>
-  </header>
-  
-    <div class="search-div">
-    <h3 class="question">What type of dog do you want?</h3>
-    <br>
-    <label>Choose a size
-      <select name="sizes" class="size-dropdown" placeholder="select">
-        <option value="all">all dogs</option>
-        <option value="small">small dogs</option>
-        <option value="medium">medium dogs</option>
-        <option value="big">big dogs</option>
-      </select>
-      <button class="search-size-btn">Search</button>
-    </label>
-    <label> 
-      Search by name 
-      <br>
-      <input class ='search-name' placeholder="Enter the name"></input>
-      <button class="search-name-btn">Search</button>
-    </label>
-    <div class = 'info hidden'>
-    <br>
-    <h4>CLICK ON DOG NAME TO DISPLAY MORE INFO!</h4>
-    <br>
-  </div>
-  </div>
-  
-  <div class="modal hidden">
-    <button class="close-modal">&times;</button>
-    <div class="modal-body">
-      <header class = 'dog-header'></header>
-      <div class="dog-info-modal"></div>
-      <button class ='show-images'>Show images google</button>
-      <div class = 'all-images'></div>
+  <body>
+    <div class="logo">
+      <img src="logo.png" alt="" class="logo-img" />
+      <h2 class="site-name">Dogs World</h2>
     </div>
+
+    <div class="search-div">
+      <h1 class="question">What type of dog do you want?</h1>
+      <div class="bySize">
+        <label
+          >Choose a size
+          <select name="sizes" class="size-dropdown">
+            <option value="all">all dogs</option>
+            <option value="small">small dogs</option>
+            <option value="medium">medium dogs</option>
+            <option value="large">large dogs</option>
+          </select>
+        </label>
+        <button class="search-size-btn">Search</button>
       </div>
-  <div class="overlay hidden"></div>
+      <div class="byName">
+        <label>
+          Search by name
+          <input class="search-name" placeholder="Enter the name" />
+        </label>
+        <button class="search-name-btn">Search</button>
+      </div>
+    </div>
 
-  <div class="dog-list">
-  </div>
+    <div class="dog-list"></div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script type="text/javascript" src ='./dogs.json'></script>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <div class="modal-body">
+        <header class="dog-header-modal"></header>
+        <div class="dog-info-modal"></div>
+        <button class="show-images">Show images google</button>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="./dogs.json"></script>
     <script src="./script.js"></script>
   </body>
 </html>
