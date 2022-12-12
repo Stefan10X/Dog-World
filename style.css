@@ -20,6 +20,7 @@ body {
   align-items: center;
   width: 180px;
   cursor: pointer;
+  margin-bottom: 40px;
 }
 
 .logo-img {
@@ -36,15 +37,11 @@ body {
 }
 
 .search-div {
-  row-gap: 30px;
   height: 250px;
   width: 800px;
   display: grid;
   justify-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  margin-top: 10px;
+  margin: 20px auto;
   font-size: 25px;
 }
 
@@ -111,7 +108,6 @@ body {
   grid-column: 1/-1;
   text-align: center;
   font-size: 25px;
-  margin-bottom: 30px;
 }
 
 .error-message {
