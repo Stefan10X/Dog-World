@@ -265,9 +265,9 @@ body {
   transition: 0.5s;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 544px) {
   .question {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .search-div {
@@ -275,6 +275,25 @@ body {
     width: 500px;
     display: grid;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 16px;
+  }
+
+  .size-dropdown {
+    font-size: 16px;
+  }
+
+  .search-size-btn {
+    font-size: 16px;
+    width: 80px;
+  }
+
+  .search-name {
+    font-size: 16px;
+    width: 80px;
+  }
+
+  .search-name-btn {
+    font-size: 16px;
+    width: 80px;
   }
 }
