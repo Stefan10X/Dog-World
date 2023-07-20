@@ -65,7 +65,7 @@ const searchByName = function () {
           html = "<h1 class = 'error-message'>ENTER THE NAME!</h1>";
         } else if (
           searchName.value === dog.name ||
-          searchName.value === dog.name.toLowerCase()
+          searchName.value.toLowerCase() === dog.name.toLowerCase()
         ) {
           html += `
           <div class = 'dog-info centered'>

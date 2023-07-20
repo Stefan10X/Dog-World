@@ -79,7 +79,7 @@ body {
   margin: auto;
 }
 .search-size-btn:hover {
-  background-color: #3df55f;
+  background-color: #17f13f;
   transition: 0.5s;
 }
 
@@ -100,7 +100,7 @@ body {
   margin: auto;
 }
 .search-name-btn:hover {
-  background-color: limegreen;
+  background-color: #17f13f;
   transition: 0.5s;
 }
 
@@ -159,7 +159,7 @@ body {
 }
 
 .dog-name:hover {
-  color: #d8ffe0;
+  color: #17f13f;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -265,35 +265,182 @@ body {
   transition: 0.5s;
 }
 
-@media (max-width: 544px) {
+@media screen and (max-width: 900px) {
+  body {
+    width: 380px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+
+  .logo-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .site-name {
+    font-size: 25px;
+  }
+
   .question {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .search-div {
     height: 250px;
-    width: 500px;
+    width: 330px;
     display: grid;
-    margin: 0 auto;
-    font-size: 16px;
+    justify-items: center;
+    margin: auto;
+    font-size: 22px;
   }
 
   .size-dropdown {
-    font-size: 16px;
-  }
-
-  .search-size-btn {
-    font-size: 16px;
-    width: 80px;
+    font-size: 22px;
+    width: 190px;
   }
 
   .search-name {
-    font-size: 16px;
-    width: 80px;
+    font-size: 22px;
   }
 
-  .search-name-btn {
+  .centered {
+    grid-column: auto;
+  }
+
+  .error-message {
+    font-size: 22px;
+    grid-column: 1/-1;
+    text-align: center;
+  }
+
+  .info {
+    grid-column: 1/-1;
+    text-align: center;
     font-size: 16px;
-    width: 80px;
+    margin-bottom: 20px;
+  }
+
+  .dog-list {
+    display: grid;
+    grid-template-columns: 170px 170px;
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 380px;
+    position: relative;
+    justify-items: center;
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  .dog-info {
+    position: relative;
+    height: 190px;
+    width: 170px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #85f89a;
+    color: black;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+  }
+
+  .dog-name {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .dog-img {
+    position: relative;
+    height: 120px;
+  }
+
+  .modal {
+    position: relative;
+    border: 8px solid #85f89a;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 85%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    overflow: auto;
+  }
+
+  .close-modal {
+    position: fixed;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 3.5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    gap: 50px;
+    width: 300px;
+    height: 350px;
+    margin-top: 30px;
+  }
+
+  .dog-img-modal {
+    height: auto;
+    width: 200px;
+  }
+
+  .dog-header-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 12px;
+  }
+
+  .dog-info-modal {
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+    font-size: 18px;
+  }
+
+  .show-images {
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+    border: none;
+    line-height: 1em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background: #85f89a;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-size: 300%;
+    z-index: 1;
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    margin: auto;
   }
 }
