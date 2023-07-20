@@ -385,9 +385,9 @@ body {
   }
 
   .close-modal {
-    position: fixed;
+    position: sticky;
     top: 1.2rem;
-    right: 2rem;
+    left: 26rem;
     font-size: 3.5rem;
     color: #333;
     cursor: pointer;
@@ -402,7 +402,6 @@ body {
     gap: 50px;
     width: 300px;
     height: 350px;
-    margin-top: 30px;
   }
 
   .dog-img-modal {
@@ -425,9 +424,9 @@ body {
   }
 
   .show-images {
-    position: absolute;
+    position: relative;
     bottom: 20px;
-    right: 100px;
+    right: 0px;
     border: none;
     line-height: 1em;
     text-align: center;
@@ -439,8 +438,9 @@ body {
     z-index: 1;
     border-radius: 50px;
     width: 150px;
-    height: 50px;
+    height: 60px;
     font-size: 18px;
+    padding: 6px;
     margin: auto;
   }
 }
