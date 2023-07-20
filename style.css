@@ -159,7 +159,7 @@ body {
 }
 
 .dog-name:hover {
-  color: #17f13f;
+  color: white;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -176,9 +176,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60%;
-  height: 70%;
+  height: 80%;
   background-color: white;
-  padding: 6rem;
+  padding: 3rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
@@ -242,7 +242,7 @@ body {
 
 .show-images {
   position: absolute;
-  bottom: 100px;
+  bottom: 30px;
   right: 100px;
   border: none;
   line-height: 1em;
@@ -255,13 +255,13 @@ body {
   z-index: 1;
   border-radius: 50px;
   width: 300px;
-  height: 100px;
+  height: 70px;
   font-size: 20px;
   margin: auto;
 }
 
 .show-images:hover {
-  background-color: #3df55f;
+  background-color: #17f13f;
   transition: 0.5s;
 }
 
