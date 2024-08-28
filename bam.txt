@@ -1,0 +1,67 @@
+import React from 'react';
+import { useForm } from 'react-hook-form';
+
+const Register = () => {
+  const { register, handleSubmit, formState: { errors } } = useForm();
+
+  const onSubmit = (data) => {
+    console.log('Form data:', data);
+  };
+
+  return (
+    <div style={{ maxWidth: '400px', margin: '0 auto', padding: '20px' }}>
+      <h2>Register</h2>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        {/* Username */}
+        <div style={{ marginBottom: '10px' }}>
+          <label>Username</label>
+          <input 
+            {...register('username', {
+              required: 'Username is required',
+              minLength: { value: 3, message: 'Username must be at least 3 characters long' },
+              maxLength: { value: 15, message: 'Username must be less than 15 characters long' },
+            })}
+          />
+          {errors.username && <p style={{ color: 'red' }}>{errors.username.message}</p>}
+        </div>
+
+        {/* Email */}
+        <div style={{ marginBottom: '10px' }}>
+          <label>Email</label>
+          <input 
+            {...register('email', {
+              required: 'Email is required',
+              pattern: {
+                value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                message: 'Enter a valid email address'
+              }
+            })}
+            type="email"
+          />
+          {errors.email && <p style={{ color: 'red' }}>{errors.email.message}</p>}
+        </div>
+
+        {/* Password */}
+        <div style={{ marginBottom: '10px' }}>
+          <label>Password</label>
+          <input 
+            {...register('password', {
+              required: 'Password is required',
+              minLength: { value: 8, message: 'Password must be at least 8 characters long' },
+              pattern: {
+                value: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
+                message: 'Password must contain at least one letter and one number'
+              }
+            })}
+            type="password"
+          />
+          {errors.password && <p style={{ color: 'red' }}>{errors.password.message}</p>}
+        </div>
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  );
+};
+
+export default Register;
